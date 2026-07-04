@@ -194,10 +194,12 @@ export default function SearchPage() {
       <div className="flex-1 flex flex-col lg:flex-row relative">
         {/* LEFT COMPARTMENT: LISTING GRID */}
         <div
-          className={`flex-1 p-4 sm:p-6 overflow-y-auto ${
-            viewMode === 'split' ? 'lg:max-w-[55%] xl:max-w-[50%]' : 'w-full'
+          className={`flex-1 p-4 sm:p-6 ${
+            viewMode === 'split'
+              ? 'lg:max-w-[55%] xl:max-w-[50%] overflow-y-auto'
+              : 'w-full'
           }`}
-          style={{ height: 'calc(100vh - 120px)' }}
+          style={viewMode === 'split' ? { height: 'calc(100vh - 120px)' } : undefined}
         >
           {/* SEARCH META SUMMARY */}
           <div className="mb-6 flex items-center justify-between">
