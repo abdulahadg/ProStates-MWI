@@ -40,6 +40,16 @@ export default function Hero() {
       price: '¥48,000',
       image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600&auto=format&fit=crop',
       badge: 'Zen Garden'
+    },
+    {
+      id: 'amalfi',
+      name: 'Villa Treville Estate',
+      location: 'Amalfi Coast, Italy',
+      searchVal: 'Amalfi',
+      rating: '4.97',
+      price: '€650',
+      image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=600&auto=format&fit=crop',
+      badge: 'Cliffside'
     }
   ];
 
@@ -221,6 +231,7 @@ export default function Hero() {
                 if (index === 0) layoutClass = "self-start w-[85%] hover:z-20";
                 if (index === 1) layoutClass = "self-end w-[85%] -mt-4 lg:-mt-6 hover:z-20";
                 if (index === 2) layoutClass = "self-start w-[85%] -mt-4 lg:-mt-6 hover:z-20";
+                if (index === 3) layoutClass = "self-end w-[85%] -mt-4 lg:-mt-6 hover:z-20";
 
                 return (
                   <motion.div
